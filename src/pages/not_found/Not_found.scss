@@ -1,0 +1,25 @@
+.not_found{
+    font-family: "Manrope", sans-serif;
+    color: #454545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .not_found_txt{
+        text-align: center;
+        h3{
+            font-size: 427px;
+        }
+        strong{
+            font-size: 24px;
+        }
+        button{
+            border-radius: 100px;
+            background-color: #454545;
+            border: none;
+            color: #fff;
+            width: 216px;
+            height: 50px;
+            font-size: 16px;
+        }
+    }
+}
