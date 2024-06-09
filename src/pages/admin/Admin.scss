@@ -1,0 +1,60 @@
+.admin{
+    display: flex;
+    .create{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        strong{
+            font-family: "Manrope", sans-serif; 
+            font-size: 28px;
+        }
+        div{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            strong{
+                font-size: 14px;
+            }
+            input{
+                width: 500px;
+                border-radius: 10px;
+                padding: 20px;
+                border: none;
+                background-color: #F8F8F8;
+            }
+            input:active, :hover, :focus {
+                outline: 0;
+                outline-offset: 0;
+            }
+            select{
+                width: 500px;
+                border-radius: 10px;
+                padding: 20px;
+                border: none;
+                background-color: #F8F8F8;
+            }
+            select:active, :hover, :focus {
+                outline: 0;
+                outline-offset: 0;
+            }
+            .input{
+                width: 500px;
+                border-radius: 10px;
+                height: 150px;
+                border: none;
+                display: flex;
+                align-items: flex-start;
+                background-color: #F8F8F8;
+            }
+        }
+        button{
+            width: 180px;
+            height: 40px;
+            border: none;
+            background-color: #454545;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}

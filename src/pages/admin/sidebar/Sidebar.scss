@@ -1,0 +1,40 @@
+
+.sidebar{
+    width: 300px;
+    background-color: #454545;
+    min-height: 100vh;
+    padding: 30px;
+    font-family: "Manrope", sans-serif; 
+    strong{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+        font-size: 25px;
+    }
+    .ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li{
+            list-style-type: none;
+            color: #fff;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            font-size: 18px;
+            width: 230px;
+            height: 40px;
+            gap: 0px 20px;
+        }
+        li:hover{
+            background-color: gray;
+            width: 230px;
+            border-radius: 8px;
+            height: 40px;
+        }
+        .log_out{
+            margin-top: 230px;
+        }
+    }
+}

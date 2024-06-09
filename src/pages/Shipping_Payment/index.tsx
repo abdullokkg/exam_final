@@ -1,12 +1,13 @@
 import { FaChevronRight } from "react-icons/fa6"
 import map from "../../assets/map.png"
+import { Link } from "react-router-dom"
 
 const Shipping_Payment = () => {
     return (
         <>
             <div className="catalog">
                 <div className="home_txt">
-                    <strong>Главная <FaChevronRight /></strong>
+                    <Link to={"/"}><strong>Главная <FaChevronRight /></strong></Link>
                     <strong>Доставка и оплата</strong>
                 </div>
                 <div className="txt">
@@ -34,6 +35,9 @@ const Shipping_Payment = () => {
                     <img src={map} alt="" />
                 </div>
             </div>
+            <br />
+            <br />
+            <br />
         </>
     )
 }

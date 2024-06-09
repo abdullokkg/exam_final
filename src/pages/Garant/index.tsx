@@ -1,4 +1,5 @@
 import { FaChevronRight } from "react-icons/fa6"
+import { Link } from "react-router-dom"
 
 
 const Garant = () => {
@@ -6,7 +7,7 @@ const Garant = () => {
         <>
             <div className="catalog">
                 <div className="home_txt">
-                    <strong>Главная <FaChevronRight /></strong>
+                    <Link to={"/"}><strong>Главная <FaChevronRight /></strong></Link>
                     <strong>Гарантии</strong>
                 </div>
                 <div className="txt">
@@ -30,6 +31,9 @@ const Garant = () => {
                     </div>
                 </div>
             </div>
+            <br />
+            <br />
+            <br />
         </>
     )
 }

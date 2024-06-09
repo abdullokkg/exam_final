@@ -2,6 +2,7 @@ import { FaChevronRight } from "react-icons/fa6"
 import home1 from "../../assets/home1.png"
 import home2 from "../../assets/home2.png"
 import home3 from "../../assets/home3.png"
+import { Link } from "react-router-dom"
 
 
 const Blog = () => {
@@ -9,7 +10,7 @@ const Blog = () => {
         <>
             <div className="catalog">
                 <div className="home_txt">
-                    <strong>Главная <FaChevronRight /></strong>
+                    <Link to={"/"}><strong>Главная <FaChevronRight /></strong></Link>
                     <strong>Блог</strong>
                 </div>
                 <br />
@@ -70,6 +71,9 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
+            <br />
+            <br />
+            <br />
         </>
     )
 }

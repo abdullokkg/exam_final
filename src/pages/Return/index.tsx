@@ -1,4 +1,5 @@
 import { FaChevronRight } from "react-icons/fa6"
+import { Link } from "react-router-dom"
 
 
 const Return = () => {
@@ -6,7 +7,7 @@ const Return = () => {
         <>
             <div className="catalog">
                 <div className="home_txt">
-                    <strong>Главная <FaChevronRight /></strong>
+                    <Link to={"/"}><strong>Главная <FaChevronRight /></strong></Link>
                     <strong>Возврат</strong>
                 </div>
                 <div className="txt">

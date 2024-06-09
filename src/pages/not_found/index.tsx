@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./Not_found.scss"
 
 const Not_found = () => {
@@ -10,7 +11,7 @@ const Not_found = () => {
             <br />
             <br />
             <br />
-            <button>На главную</button>
+            <Link to={"/"}><button>На главную</button></Link>
             <br />
             <br />
             <br />

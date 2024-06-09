@@ -2,6 +2,7 @@ import "./Footer.scss"
 import Vector from "../../assets/Vector.png"
 import Carts from "../../assets/carts.png"
 import Vk from "../../assets/vk_contact.png"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -31,17 +32,17 @@ const Footer = () => {
           <strong>Покупателям</strong>
           <br />
           <br />
-          <li>О компании</li>
+          <Link className="link" to={"/about_us"}><li>О компании</li></Link>
           <br />
-          <li>Доставка и оплата</li>
+          <Link className="link" to={"shipping_payment"}><li>Доставка и оплата</li></Link>
           <br />
-          <li>Возврат</li>
+          <Link className="link" to={"/return"}><li>Возврат</li></Link>
           <br />
-          <li>Гарантии</li>
+          <Link className="link" to={"/garant"}><li>Гарантии</li></Link>
           <br />
-          <li>Контакты</li>
+          <Link className="link" to={"/contact"}><li>Контакты</li></Link>
           <br />
-          <li>Блог</li>
+          <Link className="link" to={"/blog"}><li>Блог</li></Link>
         </ul>
         <ul>
           <strong>Товары</strong>

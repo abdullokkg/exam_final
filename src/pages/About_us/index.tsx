@@ -5,14 +5,15 @@ import products3 from "../../assets/products3.png"
 import home1 from "../../assets/home1.png"
 import home2 from "../../assets/home2.png"  
 import home3 from "../../assets/home3.png"
+import { Link } from "react-router-dom"
 
 const About_us = () => {
     return (
         <>
             <div className="catalog">
                 <div className="home_txt">
-                    <strong>Главная <FaChevronRight /></strong>
-                    <strong>О компании</strong>
+                    <Link to={"/"}><strong>Главная <FaChevronRight /></strong></Link>
+                    <Link to={"/about_us"}><strong>О компании</strong></Link>
                 </div>
                 <div className="txt">
                     <div>
@@ -61,7 +62,7 @@ const About_us = () => {
                 <br />
                 <div className="catalog_txt">
                     <h1>Блог</h1>
-                    <button>Перейти в блог<FaArrowRightLong /></button>
+                    <Link to={"/blog"}><button>Перейти в блог<FaArrowRightLong /></button></Link>
                 </div>
                 <div className="homes">
                     <div className="home">
@@ -90,6 +91,9 @@ const About_us = () => {
                     </div>
                 </div>
             </div>
+            <br />
+            <br />
+            <br />
         </>
     )
 }
