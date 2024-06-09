@@ -49,6 +49,7 @@ const Nav = () => {
       </div>
       <nav className="nav">
         <div className="nav_logo">
+          <FaBarsStaggered className="icon"/>
           <Link to={"/"}><h1><img src={Vector} alt="" /> NORNLIGHT</h1></Link>
         </div>
         <div className="nav_search">
@@ -78,9 +79,9 @@ const Nav = () => {
           </div>
         </div>
         <div className="nav_btn">
-          <Link to={"/wishlist"}><button><CiHeart className="icon" />Избранное</button></Link>
-          <button><FiBarChart className="icon" />Сравнение</button>
-          <Link to={"/cart"}><button><BsCart className="icon" />Корзина</button></Link>
+          <Link to={"/wishlist"}><button><CiHeart className="icon" /><span>Избранное</span></button></Link>
+          <button className="btn3"><FiBarChart className="icon" />Сравнение</button>
+          <Link to={"/cart"}><button><BsCart className="icon" /><span>Корзина</span></button></Link>
         </div>
       </nav>
     </>
